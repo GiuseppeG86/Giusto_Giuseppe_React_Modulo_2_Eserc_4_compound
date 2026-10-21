@@ -1,14 +1,15 @@
-function Card({children, email, onClick}){
+function Card({children, onClick, card}){
     // console.log({children});
     
-
     return(
         <>
-         <div className="card">
-            <p><span>Nome</span>: {children} </p>
-            <p><span>e-mail</span>: {email} </p>
+        {card &&          
+        <div className="card">
+            <ul>
+                {children}
+            </ul>
             <button type="button" onClick={onClick}>X</button>
-        </div>
+        </div>}
         </>
     )
 }

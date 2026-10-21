@@ -92,9 +92,10 @@ header li {
   background-color: bisque;
   padding: 3rem 6rem;
   border-radius: 0.5rem;
-  display:none;
   border-style: solid;
   border-width: 1px;
+  max-height: 70vh;
+  overflow-y: scroll;
 }
 
 .card p {
